@@ -101,6 +101,7 @@
             this.Types.SelectedIndex = 0;
             this.Types.Size = new System.Drawing.Size(698, 271);
             this.Types.TabIndex = 7;
+            this.Types.SelectedIndexChanged += new System.EventHandler(this.Types_SelectedIndexChanged);
             // 
             // MainPage
             // 

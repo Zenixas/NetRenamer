@@ -117,5 +117,21 @@ namespace NetRenamer
         }
 
         #endregion
+
+        private void Types_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(Types.SelectedIndex != 0)
+            {
+                SelectCurrentButton.Enabled = true;
+                DeSelectCurrentButton.Enabled = true;
+                SelectCurrentButton.Text = $"Select All {Types.SelectedTab.Text}";
+                DeSelectCurrentButton.Text = $"Select All {Types.SelectedTab.Text}";
+            }
+            else
+            {
+                SelectCurrentButton.Enabled = false;
+                DeSelectCurrentButton.Enabled = false;
+            }
+        }
     }
 }
