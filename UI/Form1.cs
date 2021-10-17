@@ -125,7 +125,7 @@ namespace NetRenamer
                 SelectCurrentButton.Enabled = true;
                 DeSelectCurrentButton.Enabled = true;
                 SelectCurrentButton.Text = $"Select All {Types.SelectedTab.Text}";
-                DeSelectCurrentButton.Text = $"Select All {Types.SelectedTab.Text}";
+                DeSelectCurrentButton.Text = $"DeSelect All {Types.SelectedTab.Text}";
             }
             else
             {
